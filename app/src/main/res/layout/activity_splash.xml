@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_splash.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700">
+
+    <!-- App logo -->
+    <ImageView
+        android:layout_width="209dp"
+        android:layout_height="285dp"
+        android:src="@drawable/food_delivery"
+        android:id="@+id/logoImageView"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

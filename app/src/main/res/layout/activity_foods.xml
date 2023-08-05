@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_foods.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgCorn"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/corn_veg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Rs- 150"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtCorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg Corn"
+                android:layout_toRightOf="@id/imgCorn"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtDescCorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is very delicious food by our service made of corn and cheese."
+                android:layout_toRightOf="@id/imgCorn"
+                android:textSize="18sp"
+                android:layout_below="@id/txtCorn"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btnAddCart1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/imgCorn"
+                android:layout_below="@id/txtDescCorn"
+                android:padding="8dp"
+                android:background="#94d309"
+                android:text="Add to cart"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgBurger"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/burger" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rs- 100"
+                android:layout_alignTop="@id/imgBurger"
+                android:layout_marginLeft="60dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheese Burger"
+                android:layout_toRightOf="@id/imgBurger"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtDescBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taste the delicious cheese burger cooked into hot oven."
+                android:layout_toRightOf="@id/imgBurger"
+                android:textSize="18sp"
+                android:layout_below="@id/txtBurger"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btnAddCart2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/imgBurger"
+                android:layout_below="@id/txtDescBurger"
+                android:padding="8dp"
+                android:background="#94d309"
+                android:text="Add to cart"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgCoffee"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/coffee" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/imgCoffee"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="-25dp"
+                android:text="Rs- 80"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Romantic Coffe"
+                android:layout_toRightOf="@id/imgCoffee"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtDescCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share the love this summer to your Partner with Romantic Coffee"
+                android:layout_toRightOf="@id/imgCoffee"
+                android:textSize="18sp"
+                android:layout_below="@id/txtCoffee"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btnAddCart3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/imgCoffee"
+                android:layout_below="@id/txtDescCoffee"
+                android:padding="8dp"
+                android:background="#94d309"
+                android:text="Add to cart"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/imgRoll"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="-25dp"
+                android:text="Rs- 55"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRoll"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/roll" />
+
+            <TextView
+                android:id="@+id/txtRoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg Roll"
+                android:layout_toRightOf="@id/imgRoll"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtDescRoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enjoy the fresh and creamy Veg Roll this Summer. Checkout Now!"
+                android:layout_toRightOf="@id/imgRoll"
+                android:textSize="18sp"
+                android:layout_below="@id/txtRoll"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btnAddCart4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/imgRoll"
+                android:layout_below="@id/txtDescRoll"
+                android:padding="8dp"
+                android:background="#94d309"
+                android:text="Add to cart"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/imgPasta"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="-5dp"
+                android:text="Rs- 250"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgPasta"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/pasta" />
+
+            <TextView
+                android:id="@+id/txtPasta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg Pasta"
+                android:layout_toRightOf="@id/imgPasta"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtDescPasta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg Pasta made fresh by Food Runner Comp. Enjoy the fresh pasta"
+                android:layout_toRightOf="@id/imgPasta"
+                android:textSize="18sp"
+                android:layout_below="@id/txtPasta"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btnAddCart5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/imgPasta"
+                android:layout_below="@id/txtDescPasta"
+                android:padding="8dp"
+                android:background="#94d309"
+                android:text="Add to cart"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

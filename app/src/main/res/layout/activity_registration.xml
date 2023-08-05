@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="133dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/food_delivery" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="3dp"
+        android:text="Register Yourself"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtMob"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/baseline_phone_iphone_24"
+        android:paddingRight="5dp"
+        android:hint="Mobile number (10 digits)"
+        android:paddingLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtMob"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/baseline_email_24"
+        android:paddingRight="5dp"
+        android:hint="Email Address"
+        android:paddingLeft="10dp"
+        android:inputType="phone"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/baseline_location_on_24"
+        android:paddingRight="5dp"
+        android:hint="Delivery Address"
+        android:paddingLeft="10dp"
+        android:inputType="text"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/baseline_lock_24"
+        android:paddingRight="5dp"
+        android:hint="Password (Min. 6 characters)"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtPass2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/baseline_lock_24"
+        android:paddingRight="5dp"
+        android:hint="Confirm Password"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPass2"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:background="#fb0000"
+        android:textColor="@color/white"
+        android:text="Register" />
+</RelativeLayout>
